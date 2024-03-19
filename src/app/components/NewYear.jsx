@@ -5,77 +5,50 @@ import "./NewYear.css";
 const NewYear = () => {
   return (
     <>
-      <div class="msg">   سال نو مبارک</div>
-      <div class="year">
-        <span class="first_year">
-          <span class="y1">1</span>
-          <span class="y2">4</span>
-          <span class="y3">0</span>
+      <div className="msg"> سال نو مبارک</div>
+      <div className="year">
+        <span className="first_year">
+          <span className="y1">1</span>
+          <span className="y2">4</span>
+          <span className="y3">0</span>
         </span>
-        <span class="old">2</span>
-        <span class="y4 new">3</span>
-        <div class="balloon"></div>
+        <span className="old">2</span>
+        <span className="y4 new">3</span>
+        <div className="balloon"></div>
       </div>
-      <div class="firework" id="firework1">
-        <div class="cracker"></div>
-        <div class="cracker"></div>
-        <div class="cracker"></div>
-        <div class="cracker"></div>
-        <div class="cracker"></div>
-        <div class="cracker"></div>
-        <div class="cracker"></div>
-        <div class="cracker"></div>
-        <div class="cracker"></div>
-        <div class="cracker"></div>
-        <div class="cracker"></div>
-        <div class="cracker"></div>
+      <div className="firework" id="firework1">
+        <Crackers />
       </div>
-      <div class="firework" id="firework2">
-        <div class="cracker"></div>
-        <div class="cracker"></div>
-        <div class="cracker"></div>
-        <div class="cracker"></div>
-        <div class="cracker"></div>
-        <div class="cracker"></div>
-        <div class="cracker"></div>
-        <div class="cracker"></div>
-        <div class="cracker"></div>
-        <div class="cracker"></div>
-        <div class="cracker"></div>
-        <div class="cracker"></div>
+      <div className="firework" id="firework2">
+        <Crackers />
       </div>
-      <div class="firework" id="firework3">
-        <div class="cracker"></div>
-        <div class="cracker"></div>
-        <div class="cracker"></div>
-        <div class="cracker"></div>
-        <div class="cracker"></div>
-        <div class="cracker"></div>
-        <div class="cracker"></div>
-        <div class="cracker"></div>
-        <div class="cracker"></div>
-        <div class="cracker"></div>
-        <div class="cracker"></div>
-        <div class="cracker"></div>
+      <div className="firework" id="firework3">
+        <Crackers />
       </div>
-      <div class="firework" id="firework4">
-        <div class="cracker"></div>
-        <div class="cracker"></div>
-        <div class="cracker"></div>
-        <div class="cracker"></div>
-        <div class="cracker"></div>
-        <div class="cracker"></div>
-        <div class="cracker"></div>
-        <div class="cracker"></div>
-        <div class="cracker"></div>
-        <div class="cracker"></div>
-        <div class="cracker"></div>
-        <div class="cracker"></div>
+      <div className="firework" id="firework4">
+        <Crackers />
       </div>
     </>
   );
 };
-
+const Crackers = () => {
+  return (
+    <>
+      <div className="cracker"></div>
+      <div className="cracker"></div>
+      <div className="cracker"></div>
+      <div className="cracker"></div>
+      <div className="cracker"></div>
+      <div className="cracker"></div>
+      <div className="cracker"></div>
+      <div className="cracker"></div>
+      <div className="cracker"></div>
+      <div className="cracker"></div>
+      <div className="cracker"></div>
+      <div className="cracker"></div>
+    </>
+  );
+}
 
 
 export default NewYear;
